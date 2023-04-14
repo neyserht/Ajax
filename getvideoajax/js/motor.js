@@ -1,7 +1,17 @@
-function peticionServidor(d1, servidor1)
+function update_progress(e)
+{
+    if (e.lengthComputable)
+    {
+                
+    }
+}
+
+function cargarVideo(videoServidor)
 {
     //alert("hola con el evento en JS");
     let ajax1 = new XMLHttpRequest();
+
+    ajax1.onprogress = update_progress;
     
     ajax1.onreadystatechange = function()
     {
@@ -21,22 +31,18 @@ window.addEventListener("load", function(event)
 {
 
     //Establecer una referencia de los elementos
-    const b1 = document.getElementById("b1");
-    const d1 = document.getElementById("d1");
-    const servidor1 = "servidor.php";
+    const resultado1 = document.getElementById("resultado1");
+    
     
     // Asociar el elemento al evento y llamada a la funcion
-    if(b1)
+    if(resultado1)
     {
-        const c1 = document.getElementById("c1");
-        const c2 = document.getElementById("c2");
-        const d1 = document.getElementById("d1");
 
-
-        b1.addEventListener("click", function(event)
+        resultado1.addEventListener("click", function(event)
         {
             event.preventDefault();
-            peticionServidor(d1, servidor1);
+            const videoServidor = "servidor.html"
+            cargarVideo(videoServidor);
 
         });
     }
