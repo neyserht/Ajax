@@ -24,6 +24,7 @@ window.addEventListener("load", function(event)
 
     texto.addEventListener("input",function(){
         console.log(texto.value);
+        
     })
    
     let objeto;
