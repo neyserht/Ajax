@@ -13,6 +13,13 @@ function peticionServidor(argumento, div, servidor1)
     //ajax1.open('GET', servidor1 + '?argumento='+ argumento , true);
     ajax1.open('GET', servidor1 + "?datosJSON1="+ argumento, true);
     ajax1.send();
+
+    // BORJA
+    let objJSON1 = this.response;
+    let objJSON2 = objJSON1.parse(objJSON1);
+    let pelicular1 = objJSON2["peliculas"];
+    
+    ajax1.open('GET',"json/bd1.json",true);
 }
 
 // Cuando todos los recursos se hayan cargado se añade el escuchador de eventos
