@@ -1,0 +1,22 @@
+[
+	{
+		"album" : "Pista 1",
+		"archivo" : "001.mp3",
+		"imagen" : "001.jpg"
+	},
+	{
+		"album" : "Pista 2",
+		"archivo" : "002.mp3",
+		"imagen" : "001.jpg"
+	},
+	{
+		"album" : "Pista 3",
+		"archivo" : "003.mp3",
+		"imagen" : "001.jpg"
+	},
+	{
+		"album" : "Pista 4",
+		"archivo" : "004.mp3",
+		"imagen" : "001.jpg"
+	}
+]

@@ -1,0 +1,34 @@
+[
+	{
+		"id" : "001",
+		"titulo" : "Pista1",
+		"director" : "director 1",
+		"protagonista" : "Protagonista 1",
+		"genero" : "Terror",
+		"ruta" : "video/001.mp4"
+	},
+	{
+		"id" : "002",
+		"titulo" : "Pista 2",
+		"director" : "Director 2",
+		"protagonista" : "Protagonista 2",
+		"genero" : "Drama",
+		"ruta" : "video/002.mp4"
+	},
+	{
+		"id" : "003",
+		"titulo" : "Pista 3",
+		"director" : "director 3",
+		"protagonista" : "Protagonista 3",
+		"genero" : "Terror",
+		"ruta" : "video/003.mp4"
+	},
+	{
+		"id" : "004",
+		"titulo" : "Pista 4",
+		"director" : "Director 4",
+		"protagonista" : "Protagonista 4",
+		"genero" : "Accion",
+		"ruta" : "video/004.mp4"
+	}
+]

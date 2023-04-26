@@ -10,10 +10,8 @@ function peticionServidor(disco, servidor1)
             document.getElementById(d1.id).innerHTML = ajax1.responseText;
         }
     };
-
     ajax1.open('GET', servidor1 + '?pista='+ disco.id , true);
     ajax1.send();
-
 }
 
 // Cuando todos los recursos se hayan cargado se añade el escuchador de eventos
@@ -23,7 +21,6 @@ window.addEventListener("load", function(event)
 
     //Establecer una referencia de los elementos
     const disco = this.document.getElementsByName("disco");
-
 
     const servidor1 = "servidor.php";  
     
