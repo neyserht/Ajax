@@ -19,7 +19,16 @@ function peticionServidor(argumento, div, servidor1)
     let objJSON2 = objJSON1.parse(objJSON1);
     let pelicular1 = objJSON2["peliculas"];
     
-    ajax1.open('GET',"json/bd1.json",true);
+    //ajax1.open('GET',"json/bd1.json",true);
+
+    
+
+    
+
+
+
+
+
 }
 
 // Funcion para poblar informacion de peliculas
@@ -44,16 +53,61 @@ function listarPeliculas(parametro) {
 
 }
 
+// Verificar la carga de pagina
+window.onload = function () {
+    
+    const body1 = document.body;
+    //alert(body1.id.toString);
+
+    if (body1.id=="index") 
+    {
+        alert("Estas en Index 1");
+    } 
+    else if (body1.id=="index2")
+    {
+        alert("Estas en Index 2");
+    }
+
+
+}
+
+
 // Cuando todos los recursos se hayan cargado se añade el escuchador de eventos
 
 window.addEventListener("load", function(event)
 {
+
+    // Prueba JSON
+    
+    //const testJSON =  ajax1.open('GET',"json/bd1.json",true);
+
+
+
     listarPeliculas("total");
 
     var texto = document.getElementById("texto");
 
     texto.addEventListener("input",function(){
         listarPeliculas(texto.value);
+
+        // Leer JSON
+        let data1 = this.response;
+        console.log(data1);
+
+
+        var array1;
+
+        fetch("lista.json")
+        .then(res => res.json())
+        .then(data =>{
+            data.push(array1);
+        });
+
+        
+        console.log(array1);
+        
+
+        
         
     })
    
