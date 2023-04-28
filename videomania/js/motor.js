@@ -22,15 +22,38 @@ function peticionServidor(argumento, div, servidor1)
     ajax1.open('GET',"json/bd1.json",true);
 }
 
+// Funcion para poblar informacion de peliculas
+function listarPeliculas(parametro) {
+    console.log(parametro);
+
+    let ajax1 = new XMLHttpRequest();
+    
+    ajax1.onreadystatechange = function()
+    {
+        if (ajax1.readyState==4 && ajax1.status==200)
+        {
+            div.innerHTML = ajax1.responseText;
+        }
+    };
+
+    let servidor1 = "pelicula.php";
+    let div = document.getElementById("d1");
+
+    ajax1.open('GET', servidor1 + "?parametro="+ parametro, true);
+    ajax1.send();
+
+}
+
 // Cuando todos los recursos se hayan cargado se añade el escuchador de eventos
 
 window.addEventListener("load", function(event)
 {
+    listarPeliculas("total");
 
     var texto = document.getElementById("texto");
 
     texto.addEventListener("input",function(){
-        console.log(texto.value);
+        listarPeliculas(texto.value);
         
     })
    
@@ -71,10 +94,8 @@ window.addEventListener("load", function(event)
     
     /*if(discos)
     {
-
         peticionServidor(disk, div, servidor1);
          
-
     }*/
 
 });
