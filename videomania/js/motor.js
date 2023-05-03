@@ -21,13 +21,6 @@ function peticionServidor(argumento, div, servidor1)
     
     //ajax1.open('GET',"json/bd1.json",true);
 
-    
-
-    
-
-
-
-
 
 }
 
@@ -74,45 +67,64 @@ window.onload = function () {
 
 // Cuando todos los recursos se hayan cargado se añade el escuchador de eventos
 
-window.addEventListener("load", function(event)
+window.addEventListener("load", async function(event)
 {
 
-    // Prueba JSON
+    // Leer JSON y asignarlo a pa variable peliculas
+
+    //let peliculasJSON = await fetch('lista.json', { method: 'GET' });
+    //let peliculas = await peliculasJSON.json();
+    //console.log(peliculas);
+
+    let resultadoBusqueda = [];
+    let resultadoBusquedaSR = [];
+
+    const peliculasJSON = await fetch('lista.json');
+    const peliculas = await peliculasJSON.json();
     
-    //const testJSON =  ajax1.open('GET',"json/bd1.json",true);
+
+    peliculas.forEach(obj => {
+        Object.entries(obj).forEach(([key, value]) => {
+            //console.log(`${key} ${value}`);
+            if (value.includes("a")) {
+
+                //console.log(obj['id']);
+                resultadoBusqueda.push(peliculas.indexOf(obj));
+                //console.log(typeof peliculas);
+                //console.log(obj.key);
+            }
+        });
+        //console.log('-------------------');
+    });
+
+    // Eliminar indices repetidos en el Resultado
+    for (let i = 0; i < resultadoBusqueda.length; i++) {
+        if (!resultadoBusquedaSR.includes(resultadoBusqueda[i])) {
+            resultadoBusquedaSR.push(resultadoBusqueda[i]);
+        }
+    }
+
+    console.log(resultadoBusquedaSR);
+
+    // Crear cards del resultado
+
+    
 
 
 
-    listarPeliculas("total");
+    //listarPeliculas("total");
 
     var texto = document.getElementById("texto");
 
     texto.addEventListener("input",function(){
         listarPeliculas(texto.value);
 
-        // Leer JSON
-        let data1 = this.response;
-        console.log(data1);
-
-
-        var array1;
-
-        fetch("lista.json")
-        .then(res => res.json())
-        .then(data =>{
-            data.push(array1);
-        });
-
-        
-        console.log(array1);
-        
-
-        
+ 
         
     })
    
     let objeto;
-    let objeto2;
+    //let objeto2;
     // Asociar a body el evento click....
     // (convertir todos los elementos que contiene el "body" en cliqueables)
 
