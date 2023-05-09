@@ -1,0 +1,62 @@
+const div1 = document.createElement("div"); 
+div1.classList="col-md-6 col-xl-3 p-3"
+div1.style="width: 18rem;"
+d1.appendChild(div1);
+
+const a1= document.createElement("a");
+a1.href="pelicula.php?id=005";
+div1.appendChild(a1);
+
+const img1= document.createElement("img");
+img1.href="pelicula.php?id=005";
+img1.id="005";
+img1.src="img/005.jpg";
+img1.className="card-img-top claseVideo1";
+img1.name="nombreVideo1";
+img1.alt="";
+a1.appendChild(img1);
+
+const div01 = document.createElement("div"); 
+div01.classList="card-body"
+div1.appendChild(div01);
+
+const h01 = document.createElement("h5");
+h01.className="card-title";
+h01.textContent = "Mission: Impossible";
+div01.appendChild(h01);
+
+const p01 = document.createElement("p");
+p01.className="card-text";
+p01.textContent = "Accion";
+div01.appendChild(p01);
+
+const a01= document.createElement("a");
+a01.href="pelicula.php?id=005";
+a01.className="btn btn-primary";
+a01.textContent = "Ver Pelicula";
+div01.appendChild(a01);
+
+
+const fs = require('fs');
+const archivoChistes = fs.readFileSync('./lista.json', 'utf8');
+
+let arr01 = new Array();
+let arr02;
+
+frutas = 
+fetch('lista.json')
+.then(res => res.json())
+.then(data => console.log(data));
+  
+  
+
+
+var json;
+
+fetch("lista.json")
+.then(res => res.json())
+.then(data =>{
+    data.push(json);
+    console.log(data);
+})
+  
