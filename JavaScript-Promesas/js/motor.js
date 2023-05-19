@@ -56,6 +56,7 @@ window.addEventListener("load",function(event)
     if(b1)
     {
         b1.addEventListener("click",function(event){
+            event.preventDefault();
 
             // Realizar la petición
             makeRequest('GET', 'servidor.php')
