@@ -1,0 +1,4 @@
+com\neyser\getconajaxmvc\JakartaRestConfiguration.class
+com\neyser\getconajaxmvc\resources\JakartaEE91Resource.class
+controllers\UserController.class
+models\UserModel.class

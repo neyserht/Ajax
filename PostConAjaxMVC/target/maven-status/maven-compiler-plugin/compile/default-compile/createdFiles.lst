@@ -1,0 +1,4 @@
+controllers\UserController.class
+com\mycompany\getconajaxmvc\JakartaRestConfiguration.class
+com\mycompany\getconajaxmvc\resources\JakartaEE91Resource.class
+models\UserModel.class
