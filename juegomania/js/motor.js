@@ -159,12 +159,12 @@ function removeAllChilds(a)
     div1.appendChild(div01);
 
     let h01 = document.createElement("h5");
-    h01.className="card-title";
+    h01.className="card-title text-light";
     h01.textContent = titulo;
     div01.appendChild(h01);
 
     let p01 = document.createElement("p");
-    p01.className="card-text";
+    p01.className="card-text text-light";
     p01.textContent = genero;
     div01.appendChild(p01);
 

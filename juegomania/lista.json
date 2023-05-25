@@ -1,7 +1,7 @@
 [
 	{
 		"id" : "001",
-		"titulo" : "EVERSPACE 2 V1.0 PC Release Date Story Trailer",
+		"titulo" : "EVERSPACE 2 V1.0 PC",
 		"director" : "Angel Manuel Soto",
 		"protagonista" : "Xolo Maridueña",
 		"genero" : "Accion",
@@ -9,7 +9,7 @@
 	},
 	{
 		"id" : "002",
-		"titulo" : "Hollow Knight Silksong - Xbox Game Pass Reveal Trailer - Xbox Bethesda Games Showcase 2022",
+		"titulo" : "Hollow Knight Silksong",
 		"director" : "Julius Avery",
 		"protagonista" : "Russell Crowe",
 		"genero" : "Terror",
@@ -17,7 +17,7 @@
 	},
 	{
 		"id" : "003",
-		"titulo" : "Lies of P - Gameplay Trailer PS5 PS4 Games",
+		"titulo" : "Lies of P",
 		"director" : "James Mangold",
 		"protagonista" : "Harrison Ford",
 		"genero" : "Aventura",
@@ -25,7 +25,7 @@
 	},
 	{
 		"id" : "004",
-		"titulo" : "Marvel s Spider-Man 2 - PlayStation Showcase 2021 Reveal Trailer PS5",
+		"titulo" : "Marvel Spider-Man 2 ",
 		"director" : "Denis Villeneuve",
 		"protagonista" : "Timothée Chalamet",
 		"genero" : "Aventura",
@@ -33,7 +33,7 @@
 	},
 	{
 		"id" : "005",
-		"titulo" : "Street Fighter 6 - Zangief, Lily and Cammy Gameplay Trailer PS5 Games",
+		"titulo" : "Yu-Gi-Oh!",
 		"director" : "Christopher McQuarrie",
 		"protagonista" : "Tom Cruise",
 		"genero" : "Accion",
@@ -41,7 +41,55 @@
 	},
 	{
 		"id" : "006",
-		"titulo" : "The Legend of Zelda Tears of the Kingdom – Official Trailer #1 (Nintendo Switch)",
+		"titulo" : "The Legend of Zelda ",
+		"director" : "Andy Muschietti",
+		"protagonista" : "Ezra Miller",
+		"genero" : "Accion",
+		"ruta" : "video/006.mp4"
+	},
+	{
+		"id" : "007",
+		"titulo" : "EVERSPACE 2 V1.0 PC",
+		"director" : "Angel Manuel Soto",
+		"protagonista" : "Xolo Maridueña",
+		"genero" : "Accion",
+		"ruta" : "video/001.mp4"
+	},
+	{
+		"id" : "008",
+		"titulo" : "Hollow Knight Silksong",
+		"director" : "Julius Avery",
+		"protagonista" : "Russell Crowe",
+		"genero" : "Terror",
+		"ruta" : "video/002.mp4"
+	},
+	{
+		"id" : "009",
+		"titulo" : "Lies of P",
+		"director" : "James Mangold",
+		"protagonista" : "Harrison Ford",
+		"genero" : "Aventura",
+		"ruta" : "video/003.mp4"
+	},
+	{
+		"id" : "010",
+		"titulo" : "Marvel Spider-Man 2 ",
+		"director" : "Denis Villeneuve",
+		"protagonista" : "Timothée Chalamet",
+		"genero" : "Aventura",
+		"ruta" : "video/004.mp4"
+	},
+	{
+		"id" : "011",
+		"titulo" : "Yu-Gi-Oh!",
+		"director" : "Christopher McQuarrie",
+		"protagonista" : "Tom Cruise",
+		"genero" : "Accion",
+		"ruta" : "video/005.mp4"
+	},
+	{
+		"id" : "012",
+		"titulo" : "The Legend of Zelda ",
 		"director" : "Andy Muschietti",
 		"protagonista" : "Ezra Miller",
 		"genero" : "Accion",
